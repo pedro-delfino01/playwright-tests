@@ -9,6 +9,7 @@ def setup():
         context = browser.new_context()
         page = context.new_page()
         page.goto(url=URL)
+        page.wait_for_load_state('networkidle')
         yield page
         context.close()
         browser.close()
