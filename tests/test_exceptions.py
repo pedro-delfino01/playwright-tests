@@ -1,6 +1,4 @@
 from playwright.sync_api import expect
-
-from conftest import setup
 from pages.home_page import HomePage
 
 
